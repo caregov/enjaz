@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+        <html lang="ar" dir="rtl">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>مكتب تعقيب وتصاريح | تصاريح الزواج والتعقيب في السعودية</title>
+        <meta name="description" content="مكتب متخصص في استخراج تصاريح الزواج والتعقيب الحكومي في المملكة العربية السعودية بسرعة وسرية تامة.">
+        <style>
+        :root{--gold:#c9a84c;--gold2:#e8c97a;--navy:#0d1b2e;--navy2:#122540;--wa:#25D366;--wa2:#1da851;--w:#fff}
+        *{margin:0;padding:0;box-sizing:border-box}
+        html{scroll-behavior:smooth}
+        body{font-family:Cairo,Tahoma,sans-serif;background:var(--navy);color:var(--w);direction:rtl;overflow-x:hidden}
+        a{text-decoration:none}
+        img{display:block;width:100%}
+        
+        /* NAV */
+        nav{position:fixed;top:0;right:0;left:0;z-index:999;background:rgba(13,27,46,.97);border-bottom:1px solid rgba(201,168,76,.18);padding:0 4%}
+        .nav-in{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px}
+        .logo{display:flex;align-items:center;gap:10px}
+        .logo-ic{width:38px;height:38px;background:linear-gradient(135deg,var(--gold),#9a7a2e);border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:18px}
+        .logo-t{font-size:15px;font-weight:800;line-height:1.25}
+        .logo-t span{color:var(--gold)}
+        .nav-links{display:flex;gap:22px;list-style:none}
+        .nav-links a{color:rgba(255,255,255,.75);font-size:13px;font-weight:600;transition:.2s}
+        .nav-links a:hover{color:var(--gold)}
+        .nav-right{display:flex;gap:10px;align-items:center}
+        .btn-wa{display:flex;align-items:center;gap:7px;background:var(--wa);color:#fff;padding:9px 16px;border-radius:8px;font-size:13px;font-weight:700;transition:.2s}
+        .btn-wa:hover{background:var(--wa2)}
+        .btn-gold{background:linear-gradient(135deg,var(--gold),#9a7a2e);color:var(--navy);padding:9px 18px;border-radius:8px;font-size:13px;font-weight:800;transition:.2s}
+        .btn-gold:hover{opacity:.88}
+        .hbg{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px}
+        .hbg span{width:22px;height:2px;background:var(--gold);border-radius:2px;display:block}
+        .mob-menu{display:none;position:fixed;top:64px;right:0;left:0;bottom:0;background:rgba(9,19,32,.98);z-index:998;padding:28px 5%;flex-direction:column;gap:4px;overflow-y:auto}
+        .mob-menu.on{display:flex}
+        .mob-menu a{color:#fff;font-size:16px;font-weight:700;padding:14px 0;border-bottom:1px solid rgba(201,168,76,.12);transition:.2s}
+        .mob-menu a:hover{color:var(--gold)}
+        
+        /* HERO */
+        .hero{min-height:100vh;position:relative;display:flex;align-items:center;padding-top:64px}
+        .hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=55') center/cover no-repeat}
+        .hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(120deg,rgba(13,27,46,.96) 0%,rgba(13,27,46,.82) 60%,rgba(13,27,46,.65) 100%)}
+        .hero-bg::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(201,168,76,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,76,.05) 1px,transparent 1px);background-size:55px 55px;z-index:1}
+        .hero-ct{position:relative;z-index:2;max-width:1280px;margin:0 auto;padding:70px 4%}
+        .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.28);padding:7px 16px;border-radius:30px;font-size:12px;font-weight:700;color:var(--gold2);margin-bottom:24px}
+        .badge-dot{width:7px;height:7px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite}
+        @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.4)}}
+        .hero h1{font-size:clamp(1.8rem,4.5vw,3.4rem);font-weight:900;line-height:1.3;margin-bottom:20px}
+        .hero h1 span{color:var(--gold)}
+        .hero-sub{font-size:clamp(.9rem,1.8vw,1.05rem);color:rgba(255,255,255,.7);line-height:1.85;max-width:620px;margin-bottom:36px}
+        .hero-btns{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:52px}
+        .btn-hero-wa{display:inline-flex;align-items:center;gap:9px;background:var(--wa);color:#fff;padding:15px 28px;border-radius:10px;font-size:15px;font-weight:800;box-shadow:0 6px 24px rgba(37,211,102,.3);transition:.2s}
+        .btn-hero-wa:hover{background:var(--wa2);transform:translateY(-2px)}
+        .btn-hero-g{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,var(--gold),#9a7a2e);color:var(--navy);padding:15px 28px;border-radius:10px;font-size:15px;font-weight:800;box-shadow:0 6px 24px rgba(201,168,76,.28);transition:.2s}
+        .btn-hero-g:hover{opacity:.9;transform:translateY(-2px)}
+        .stats{display:flex;flex-wrap:wrap;border:1px solid rgba(201,168,76,.18);border-radius:14px;overflow:hidden;background:rgba(255,255,255,.03);max-width:720px}
+        .stat{flex:1;min-width:140px;padding:18px 20px;text-align:center;border-left:1px solid rgba(201,168,76,.13)}
+        .stat:last-child{border-left:none}
+        .stat b{display:block;font-size:1.65rem;font-weight:900;color:var(--gold);line-height:1;margin-bottom:5px}
+        .stat span{font-size:11px;color:rgba(255,255,255,.55);font-weight:600}
+        
+        /* SECTIONS */
+        section{position:relative;z-index:1}
+        .wrap{max-width:1280px;margin:0 auto;padding:80px 4%}
+        .lbl{display:inline-block;color:var(--gold);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+        .sec-h{font-size:clamp(1.5rem,3vw,2.4rem);font-weight:900;line-height:1.35;margin-bottom:14px}
+        .sec-h span{color:var(--gold)}
+        .sec-p{font-size:.92rem;color:rgba(255,255,255,.6);line-height:1.85;max-width:580px}
+        .sec-hd{margin-bottom:44px}
+        
+        /* SERVICES */
+        #services{background:var(--navy2);border-top:1px solid rgba(201,168,76,.1)}
+        .srv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+        .srv-card{background:rgba(255,255,255,.03);border:1px solid rgba(201,168,76,.14);border-radius:14px;overflow:hidden;transition:.25s}
+        .srv-card:hover{transform:translateY(-5px);border-color:rgba(201,168,76,.38)}
+        .srv-img{height:160px;object-fit:cover;width:100%;filter:brightness(.85)}
+        .srv-body{padding:22px}
+        .srv-icon{width:42px;height:42px;background:rgba(201,168,76,.13);border:1px solid rgba(201,168,76,.25);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:14px}
+        .srv-card h3{font-size:.97rem;font-weight:800;margin-bottom:9px}
+        .srv-card p{font-size:.83rem;color:rgba(255,255,255,.58);line-height:1.7;margin-bottom:16px}
+        .btn-srv{display:inline-flex;align-items:center;gap:5px;color:var(--gold);font-size:12px;font-weight:700;transition:.2s}
+        .btn-srv:hover{gap:9px}
+        
+        /* WHY */
+        #why-us{background:var(--navy);border-top:1px solid rgba(201,168,76,.1)}
+        .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+        .why-feat{display:flex;flex-direction:column;gap:22px}
+        .wf{display:flex;gap:16px;align-items:flex-start}
+        .wf-ic{width:44px;height:44px;background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.22);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+        .wf h4{font-size:.95rem;font-weight:800;margin-bottom:5px}
+        .wf p{font-size:.84rem;color:rgba(255,255,255,.58);line-height:1.7}
+        .why-img-w{border-radius:16px;overflow:hidden;position:relative}
+        .why-img-w img{height:400px;object-fit:cover}
+        .why-img-w::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,transparent 55%,rgba(13,27,46,.75))}
+        .why-badge{position:absolute;bottom:20px;right:20px;z-index:2;background:rgba(13,27,46,.92);border:1px solid rgba(201,168,76,.35);backdrop-filter:blur(8px);padding:12px 18px;border-radius:10px}
+        .why-badge b{display:block;font-size:1.3rem;font-weight:900;color:var(--gold)}
+        .why-badge span{font-size:11px;color:rgba(255,255,255,.65)}
+        
+        /* STEPS */
+        #steps{background:var(--navy2);border-top:1px solid rgba(201,168,76,.1)}
+        .steps-list{max-width:760px;margin:0 auto;position:relative}
+        .steps-list::before{content:'';position:absolute;top:0;bottom:0;right:22px;width:2px;background:linear-gradient(to bottom,var(--gold),transparent)}
+        .step{display:flex;gap:24px;align-items:flex-start;padding:24px 0}
+        .step-n{width:46px;height:46px;background:linear-gradient(135deg,var(--gold),#9a7a2e);color:var(--navy);font-size:17px;font-weight:900;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;position:relative;z-index:1}
+        .step h4{font-size:.97rem;font-weight:800;margin-bottom:6px}
+        .step p{font-size:.85rem;color:rgba(255,255,255,.58);line-height:1.7}
+        
+        /* FAQ */
+        #faq{background:var(--navy);border-top:1px solid rgba(201,168,76,.1)}
+        .faq-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+        .faq-it{background:rgba(255,255,255,.03);border:1px solid rgba(201,168,76,.14);border-radius:12px;overflow:hidden}
+        .faq-q{width:100%;background:none;border:none;color:#fff;font-family:inherit;font-size:.93rem;font-weight:800;text-align:right;padding:18px 20px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px}
+        .faq-q::after{content:'+';font-size:20px;color:var(--gold);flex-shrink:0;transition:.3s}
+        .faq-it.on .faq-q::after{transform:rotate(45deg)}
+        .faq-a{display:none;padding:0 20px 18px;font-size:.87rem;color:rgba(255,255,255,.62);line-height:1.8}
+        .faq-it.on .faq-a{display:block}
+        
+        /* TESTIMONIALS */
+        #reviews{background:var(--navy2);border-top:1px solid rgba(201,168,76,.1)}
+        .rev-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+        .rev-card{background:rgba(255,255,255,.03);border:1px solid rgba(201,168,76,.14);border-radius:14px;padding:24px;position:relative}
+        .rev-card::before{content:'❝';font-size:2.5rem;color:rgba(201,168,76,.1);position:absolute;top:12px;left:16px;line-height:1}
+        .stars{color:var(--gold);font-size:14px;margin-bottom:12px}
+        .rev-card p{font-size:.87rem;color:rgba(255,255,255,.68);line-height:1.75;margin-bottom:16px}
+        .rev-auth{font-size:.84rem;font-weight:700;color:var(--gold2)}
+        
+        /* CONTACT */
+        #contact{background:var(--navy);border-top:1px solid rgba(201,168,76,.1)}
+        .contact-box{background:linear-gradient(135deg,rgba(201,168,76,.07),rgba(201,168,76,.02));border:1px solid rgba(201,168,76,.18);border-radius:20px;padding:52px;max-width:700px;margin:0 auto}
+        .contact-box h2{font-size:clamp(1.3rem,2.5vw,2rem);font-weight:900;margin-bottom:8px}
+        .contact-box .sub{font-size:.9rem;color:rgba(255,255,255,.58);margin-bottom:32px}
+        .fg{margin-bottom:16px}
+        .fg label{display:block;font-size:12px;font-weight:700;color:rgba(255,255,255,.75);margin-bottom:7px}
+        .fc{width:100%;background:rgba(255,255,255,.05);border:1.5px solid rgba(201,168,76,.18);border-radius:9px;padding:12px 16px;color:#fff;font-family:inherit;font-size:14px;outline:none;transition:.2s}
+        .fc:focus{border-color:rgba(201,168,76,.55);background:rgba(255,255,255,.08)}
+        .fc::placeholder{color:rgba(255,255,255,.28)}
+        select.fc option{background:var(--navy2)}
+        .btn-submit{width:100%;background:var(--wa);color:#fff;border:none;padding:15px;border-radius:10px;font-family:inherit;font-size:15px;font-weight:800;cursor:pointer;transition:.2s;margin-top:6px;display:flex;align-items:center;justify-content:center;gap:10px}
+        .btn-submit:hover{background:var(--wa2);transform:translateY(-2px)}
+        
+        /* FOOTER */
+        footer{background:rgba(0,0,0,.45);border-top:1px solid rgba(201,168,76,.12)}
+        .foot-in{max-width:1280px;margin:0 auto;padding:52px 4% 28px}
+        .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:44px;margin-bottom:44px}
+        .foot-brand p{font-size:.84rem;color:rgba(255,255,255,.5);line-height:1.8;margin:14px 0}
+        .foot-col h4{font-size:.88rem;font-weight:800;color:var(--gold2);margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid rgba(201,168,76,.13)}
+        .foot-col ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+        .foot-col ul a{color:rgba(255,255,255,.55);font-size:.85rem;transition:.2s}
+        .foot-col ul a:hover{color:var(--gold)}
+        .foot-ci{display:flex;align-items:center;gap:9px;font-size:.84rem;color:rgba(255,255,255,.55);margin-bottom:10px}
+        .foot-wa{display:flex;align-items:center;gap:9px;background:var(--wa);color:#fff;padding:11px 18px;border-radius:9px;font-size:13px;font-weight:700;margin-top:14px;transition:.2s}
+        .foot-wa:hover{background:var(--wa2)}
+        .foot-btm{border-top:1px solid rgba(201,168,76,.1);padding-top:20px;font-size:12px;color:rgba(255,255,255,.35);display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
+        
+        /* WA FLOAT */
+        .wa-float{position:fixed;bottom:24px;left:24px;z-index:9999;width:56px;height:56px;background:var(--wa);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.45);animation:bob 3s ease-in-out infinite;transition:.2s}
+        .wa-float:hover{transform:scale(1.12)}
+        @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+        .wa-float svg{width:28px;height:28px;fill:#fff}
+        
+        /* RESPONSIVE */
+        @media(max-width:900px){
+        .why-grid{grid-template-columns:1fr}
+        .why-img-w{display:none}
+        .foot-grid{grid-template-columns:1fr 1fr}
+        }
+        @media(max-width:640px){
+        .nav-links,.btn-gold{display:none}
+        .hbg{display:flex}
+        .srv-grid,.rev-grid{grid-template-columns:1fr}
+        .foot-grid{grid-template-columns:1fr}
+        .contact-box{padding:28px 18px}
+        .stats{flex-direction:column}
+        .stat{border-left:none;border-top:1px solid rgba(201,168,76,.12)}
+        .stat:first-child{border-top:none}
+        .hero-btns{flex-direction:column}
+        }
+        </style>
+        </head>
+        <body>
+        <!-- WA FLOAT BUTTON -->
+        <a href="https://wa.me/966563259401" class="wa-float" target="_blank" title="تواصل عبر واتساب">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        </a>
+        
+        <script>
+        function toggleMenu(){document.getElementById('mobMenu').classList.toggle('on')}
+        function closeMenu(){document.getElementById('mobMenu').classList.remove('on')}
+        function faq(btn){var it=btn.closest('.faq-it'),open=it.classList.contains('on');document.querySelectorAll('.faq-it').forEach(function(i){i.classList.remove('on')});if(!open)it.classList.add('on')}
+        function sendWa(){
+        var n=document.getElementById('f-name').value.trim();
+        var p=document.getElementById('f-phone').value.trim();
+        var s=document.getElementById('f-service').value;
+        var d=document.getElementById('f-details').value.trim();
+        if(!n||!p){alert('الرجاء إدخال الاسم ورقم الجوال');return}
+        var msg='السلام عليكم،\nاسمي: '+n+'\nجوالي: '+p+(s?'\nالخدمة: '+s:'')+(d?'\nتفاصيل: '+d:'');
+        window.open('https://wa.me/966563259401?text='+encodeURIComponent(msg),'_blank');
+        }
+        </script>
+        </body>
+        </html>
+        <!-- NAV -->
+        <nav>
+        <div class="nav-in">
+        <a href="#" class="logo">
+        <div class="logo-ic">⚖</div>
+        <div class="logo-t">مكتب <span>النخبة</span><br>لتصاريح الزواج والتعقيب</div>
+        </a>
+        <ul class="nav-links">
+        <li><a href="#">الرئيسية</a></li>
+        <li><a href="#services">خدماتنا</a></li>
+        <li><a href="#why-us">لماذا نحن</a></li>
+        <li><a href="#steps">خطوات العمل</a></li>
+        <li><a href="#faq">الأسئلة الشائعة</a></li>
+        </ul>
+        <div class="nav-right">
+        <a href="https://wa.me/966563259401" class="btn-wa" target="_blank">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        تواصل معنا
+        </a>
+        <a href="#contact" class="btn-gold">ابدأ معاملتك</a>
+        </div>
+        <div class="hbg" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+        </div>
+        </nav>
+        
+
+        <!-- MOBILE MENU -->
+        <div class="mob-menu" id="mobMenu">
+        <a href="#" onclick="closeMenu()">الرئيسية</a>
+        <a href="#services" onclick="closeMenu()">خدماتنا</a>
+        <a href="#why-us" onclick="closeMenu()">لماذا نحن</a>
+        <a href="#steps" onclick="closeMenu()">خطوات العمل</a>
+        <a href="#faq" onclick="closeMenu()">الأسئلة الشائعة</a>
+        <a href="https://wa.me/966563259401" target="_blank" style="color:#25D366;font-size:17px">
+        واتساب مباشر ← +966563259401
+        </a>
+        <a href="#contact" onclick="closeMenu()" style="color:var(--gold)">ابدأ معاملتك الآن</a>
+        </div>
+        
+        <!-- HERO -->
+        <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-ct">
+        <div class="badge"><span class="badge-dot"></span>خدمات معتمدة ومطابقة للأنظمة</div>
+        <h1>ننجز معاملات تصاريح الزواج<br><span>باحترافية وسرية تامة</span></h1>
+        <p class="hero-sub">نختصر عليك الوقت والجهد في تعقيب ومتابعة كافة معاملات تصاريح الزواج والتجنيس في المملكة. استشارات قانونية لضمان موافقة الجهات المختصة من المرة الأولى.</p>
+        <div class="hero-btns">
+        <a href="https://wa.me/966563259401" class="btn-hero-wa" target="_blank">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        استشارة فورية مجانية
+        </a>
+        <a href="#contact" class="btn-hero-g">تقديم طلب جديد ←</a>
+        </div>
+        <div class="stats">
+        <div class="stat"><b>+1,500</b><span>تصريح منجز بنجاح</span></div>
+        <div class="stat"><b>100%</b><span>سرية وخصوصية تامة</span></div>
+        <div class="stat"><b>+10</b><span>سنوات خبرة</span></div>
+        <div class="stat"><b>24/7</b><span>متابعة مستمرة</span></div>
+        </div>
+        </div>
+        </section>
+        
+<!-- SERVICES -->
+        <section id="services">
+        <div class="wrap">
+        <div class="sec-hd">
+        <span class="lbl">خدماتنا</span>
+        <h2 class="sec-h">خدمات استخراج تصاريح الزواج<br>والتعقيب في <span>السعودية</span></h2>
+        <p class="sec-p">نقدم خدمات متكاملة في تعقيب المعاملات الحكومية واستخراج تصاريح الزواج ومتابعة الإجراءات الرسمية وفق الأنظمة المعتمدة.</p>
+        </div>
+        <div class="srv-grid">
+      <!-- صورة: وثائق رسمية وأوراق حكومية -->
+      <img class="srv-img" src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&w=700&q=60" alt="تصاريح الزواج" loading="lazy">
+      <div class="srv-body">
+      <div class="srv-icon">📄</div>
+      <h3>استخراج تصاريح الزواج في السعودية</h3>
+      <p>تجهيز ومتابعة معاملات تصريح الزواج لدى إمارات المناطق ووزارة الداخلية حتى صدور الموافقة الرسمية بشكل نظامي وسريع.</p>
+      <a href="https://wa.me/966563259401" class="btn-srv" target="_blank">طلب الخدمة ←</a>
+      </div>
+      </div>
+        
+        <div class="srv-card">
+ <!-- صورة: زواج وعائلة -->
+ <img class="srv-img" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=700&q=60"alt="زواج سعودي من أجنبية" loading="lazy">
+        <div class="srv-body">
+        <div class="srv-icon">💍</div>
+        <h3>زواج سعودي من أجنبية</h3>
+        <p>متابعة شروط وإجراءات زواج المواطن السعودي من أجنبية داخل أو خارج المملكة مع تجهيز الملف الكامل حتى صدور الموافقة.</p>
+        <p> تصاريح الزواج من اجنبية سواء كانت مقيمة او خارج البلاد يحتاج لها محامي معاملات زواج متخصص كي يقوم بدراسة الحالة وتجهيز الاوراق والمستندات المطلوبة ، ونحن دورنا في مكتب إعلام الانجاز نسهل المعاملات وفرنا لكم افضل معقب معاملات زواج تواصل معنا وابدا في استشارة خبراء
+           </p>
+           
+           
+            <div class="srv-icon">💍</div>
+            <h3> تصريح زواج من اجنبي  <h3>
+            <p> معاملات استخراج تصريح زواج سعودية من اجنبي من المعاملات المهمه التي تحتاج الى خبرة نحن بدورنا في مكتب إعلام الانجاز وفرنا لكم معاملات تصريح زواج من اجنبي ونعمل على تجهيز المتطلبات تقديمها للجهات المختصة بالنيابة عنكي ونقوم بمتابعة المعاملة حتى صدور التصريح. </p>
+            <a href="https://wa.me/966563259401" class="btn-srv" target="_blank">طلب الخدمة ←</a>
+            </div>
+            </div>
+             
+        <div class="srv-card">
+        <!-- صورة: مرأة في إجراءات -->
+        <img class="srv-img" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=700&q=60" alt="زواج سعودية من أجنبي" loading="lazy">
+        <div class="srv-body">
+        <div class="srv-i
+        <!-- صورة: جواز سفر وهوية -->
+        <img class="srv-img" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=700&q=60" alt="معاملات التجنيس" loading="lazy">
+        <div class="srv-body">
+        <div class="srv-icon">🏅</div>
+        <h3>معاملات التجنيس في السعودية</h3>
+        <p>إعداد ومتابعة معاملات التجنيس وفق الأنظمة السعودية وتقديم الاستشارات النظامية لتقليل فرص الرفض.</p>
+        
+        <p>    نقدم خدمات استشارية وميدانية متكاملة لإعداد ومتابعة معاملات طلبات الجنسية العربية السعودية وفقاً لنظام الجنسية واللوائح التنفيذية المعمول بها. نتولى دراسة وتدقيق كافة الأوراق الثبوتية، تنظيم ملف المعاملة بشكل قانوني سليم، ومراجعة الجهات المختصة لضمان استيفاء جميع الشروط والنقاط المطلوبة، مما يساهم في تسريع الإجراءات وتقليل فرص الرفض أو التأخير       </p>
+        <a href="https://wa.me/966563259401" class="btn-srv" target="_blank">طلب الخدمة ←</a>
+        </div>
+        </div>
+        
+        
+        
+        
+        
+       
+        
+        
+        <div class="srv-card">
+        <!-- صورة: مبنى حكومي -->
+        <img class="srv-img" src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=700&q=60" alt="تعقيب المعاملات الحكومية" loading="lazy">
+        <div class="srv-body">
+        <div class="srv-icon">🏛</div>
+        <h3>خدمات التعقيب الحكومية</h3>
+        <p>متابعة المعاملات في الوزارات وإمارات المناطق وإنهاء الإجراءات العالقة عبر فريق تعقيب متخصص.</p>
+        <a href="https://wa.me/966563259401" class="btn-srv" target="_blank">طلب الخدمة ←</a>
+        </div>
+        </div>
+        
+        <div class="srv-card">
+        <!-- صورة: استشارة قانونية -->
+        <img class="srv-img" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=700&q=60" alt="استشارات قانونية" loading="lazy">
+        <div class="srv-body">
+        <div class="srv-icon">⚖</div>
+        <h3>الاستشارات القانونية والإجرائية</h3>
+        <p>دراسة المعاملات قبل التقديم لضمان مطابقتها للأنظمة وتقليل احتمالية الرفض أو التأخير.</p>
+        <a href="https://wa.me/966563259401" class="btn-srv" target="_blank">طلب الخدمة ←</a>
+        </div>
+        </div>
+        
+        </div>
+        </div>
+        </section>
+<!-- WHY US -->
+        <section id="why-us">
+        <div class="wrap">
+        <div class="why-grid">
+        <div>
+        <span class="lbl">لماذا نحن</span>
+        <h2 class="sec-h">لماذا يختار عملاؤنا<br><span>مكتبنا لإنهاء معاملاتهم؟</span></h2>
+        <p class="sec-p" style="margin-bottom:36px">نتميز بتقديم رؤية وحلول مبتكرة لتصاريح الزواج تضمن لعملائنا تجربة خالية من المتاعب والتعقيدات البيروقراطية.</p>
+        <div class="why-feat">
+        <div class="wf"><div class="wf-ic">⚡</div><div><h4>السرعة القصوى في الإنجاز</h4><p>نبدأ العمل فوراً على ملفك لتفادي أي تأخير، ونتابع معك كل خطوة حتى الانتهاء.</p></div></div>
+        <div class="wf"><div class="wf-ic">🔒</div><div><h4>الخصوصية التامة والسرية المطلقة</h4><p>جميع بياناتك ووثائقك محاطة بسرية تامة ولا تخرج عن النطاق الرسمي.</p></div></div>
+        <div class="wf"><div class="wf-ic">🏆</div><div><h4>خبرة أكثر من 10 سنوات</h4><p>فريقنا على دراية تامة بجميع مداخل المعاملات واللوائح والقرارات المحدثة.</p></div></div>
+        <div class="wf"><div class="wf-ic">✅</div><div><h4>تدقيق شامل قبل التقديم</h4><p>إعداد قانوني متكامل للملفات لضمان الموافقة من المرة الأولى.</p></div></div>
+        </div>
+        </div>
+        <div class="why-img-w">
+        <!-- صورة: موظف يراجع ملفات رسمية -->
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=65" alt="مكتب تعقيب معاملات" loading="lazy">
+        <div class="why-badge"><b>+1500</b><span>معاملة ناجحة</span></div>
+        </div>
+        </div>
+        </div>
+        </section>
+        
+        <!-- STEPS -->
+        <section id="steps">
+        <div class="wrap">
+        <div class="sec-hd" style="text-align:center">
+        <span class="lbl">آلية العمل</span>
+        <h2 class="sec-h">خطوات إنجاز <span>المعاملة</span></h2>
+        <p class="sec-p" style="margin:0 auto">من أول تواصل وحتى استلام تصريح الزواج الرسمي بيدك.</p>
+        </div>
+        <div class="steps-list">
+        <div class="step"><div class="step-n">1</div><div><h4>إرسال البيانات</h4><p>أرسل وثائقك الأولية عبر الموقع أو الواتساب لبدء فحص الملف.</p></div></div>
+        <div class="step"><div class="step-n">2</div><div><h4>مراجعة الملف</h4><p>دراسة الشروط وتحديد المتطلبات الناقصة لتفادي الرفض.</p></div></div>
+        <div class="step"><div class="step-n">3</div><div><h4>تجهيز الطلب</h4><p>صياغة المعاريض والخطابات الرسمية ورفع الملف للجهات المعنية.</p></div></div>
+        <div class="step"><div class="step-n">4</div><div><h4>متابعة المعاملة</h4><p>تعقيب المعاملة خطوة بخطوة وإفادتك دورياً بالتطورات.</p></div></div>
+        <div class="step"><div class="step-n">5</div><div><h4>استلام التصريح</h4><p>صدور تصريح الزواج رسمياً وجاهزاً لعقد القران فوراً.</p></div></div>
+        </div>
+        </div>
+        </section>
+        
+        <!-- FAQ -->
+        <section id="faq">
+        <div class="wrap">
+        <div class="sec-hd" style="text-align:center">
+        <span class="lbl">الأسئلة الشائعة</span>
+        <h2 class="sec-h">أسئلة حول <span>تصاريح الزواج</span></h2>
+        </div>
+        <div class="faq-list">
+        <div class="faq-it on"><button class="faq-q" onclick="faq(this)">هل يمكن استخراج تصريح زواج بدون موافقة الإمارة؟</button><div class="faq-a">لا، جميع إجراءات زواج السعودي من أجنبية أو العكس تتطلب موافقة رسمية من وزارة الداخلية وإمارة المنطقة لتوثيق العقد وضمان قانونيته.</div></div>
+        <div class="faq-it"><button class="faq-q" onclick="faq(this)">ماذا يحدث إذا رُفضت معاملة تصريح الزواج؟</button><div class="faq-a">نقوم بدراسة أسباب الرفض بدقة والعمل على تقديم طلب إعادة فتح وتصحيح الملف بمسوغات جديدة تضمن تلافي الرفض السابق.</div></div>
+        <div class="faq-it"><button class="faq-q" onclick="faq(this)">كم تستغرق مدة الحصول على تصريح الزواج؟</button><div class="faq-a">تتفاوت المدة حسب نوع المعاملة وكمال المستندات، وتتراوح بين أسبوعين وثمانية أسابيع. نعمل على تقليل المدة بالتجهيز السليم من البداية.</div></div>
+        <div class="faq-it"><button class="faq-q" onclick="faq(this)">هل خدماتكم سرية وآمنة؟</button><div class="faq-a">نعم، نحرص على السرية التامة لجميع بيانات عملائنا ولا تُشارك أي معلومات مع أي جهة غير المختصة بالمعاملة.</div></div>
+        <div class="faq-it"><button class="faq-q" onclick="faq(this)">ما شروط زواج السعودي من أجنبية؟</button><div class="faq-a">من أبرز الشروط: أن لا يقل عمر الخاطب عن 30 عاماً ولا يزيد عن 70، إثبات دخل كافٍ وسكن ملائم، خلو السجل من السوابق، واجتياز الفحص الطبي الإلزامي.</div></div>
+        </div>
+        </div>
+        </section>
+
+
+<!-- REVIEWS -->
+        <section id="reviews">
+        <div class="wrap">
+        <div class="sec-hd" style="text-align:center">
+        <span class="lbl">آراء العملاء</span>
+        <h2 class="sec-h">ماذا يقول <span>عملاؤنا</span> عنا؟</h2>
+        </div>
+        <div class="rev-grid">
+        <div class="rev-card"><div class="stars">★★★★★</div><p>"الحمد لله تم صدور تصريح زواجي من الخارج في وقت قياسي بفضل الله ثم جهود هذا المكتب الفاضل. تعامل راقي وسرية تامة."</p><span class="rev-auth">أبو محمد — الرياض</span></div>
+        <div class="rev-card"><div class="stars">★★★★★</div><p>"مكتب متمكن جداً وخبرة واضحة في تصاريح وإجراءات معاملة زواج سعودية من أجنبي. وفروا علي العناء والمراجعات الطويلة."</p><span class="rev-auth">أم أحمد — جدة</span></div>
+        <div class="rev-card"><div class="stars">★★★★★</div><p>"الالتزام بالمواعيد والصدق والأمانة هي عنوان هذا المكتب. شكراً على إنهاء معاملة زواج أخي من مقيمة بكل احترافية."</p><span class="rev-auth">سلطان الشمري — الدمام</span></div>
+        </div>
+        </div>
+        </section>
+        
+        <!-- CONTACT -->
+        <section id="contact">
+        <div class="wrap">
+        <div class="contact-box">
+        <span class="lbl">ابدأ معاملتك</span>
+        <h2>أرسل طلبك الآن<br>واستلم ردنا خلال ساعتين</h2>
+        <p class="sub">سيتواصل معك أحد مستشارينا عبر الواتساب لمراجعة حالتك مجاناً.</p>
+        <div class="fg"><label>الاسم الكريم</label><input type="text" class="fc" id="f-name" placeholder="أدخل اسمك الكامل"></div>
+        <div class="fg"><label>رقم الجوال (واتساب)</label><input type="tel" class="fc" id="f-phone" placeholder="05xxxxxxxx"></div>
+        <div class="fg">
+        <label>نوع الخدمة</label>
+        <select class="fc" id="f-service">
+        <option value="">اختر الخدمة...</option>
+        <option>استخراج تصريح زواج سعودي من أجنبية</option>
+        <option>استخراج تصريح زواج سعودية من أجنبي</option>
+        <option>معاملات التجنيس والإقامة</option>
+        <option>خدمات تعقيب أخرى / استشارات قانونية</option>
+        </select>
+        </div>
+        <div class="fg"><label>تفاصيل إضافية (اختياري)</label><textarea class="fc" id="f-details" rows="3" placeholder="اكتب تفاصيل معاملتك هنا..."></textarea></div>
+        <button class="btn-submit" onclick="sendWa()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        إرسال عبر واتساب مباشرة
+        </button>
+        </div>
+        </div>
+        </section>
+
+
+<!-- FOOTER -->
+        <footer>
+        <div class="foot-in">
+        <div class="foot-grid">
+        <div class="foot-brand">
+        <div class="logo"><div class="logo-ic">⚖</div><div class="logo-t">مكتب <span>النخبة</span><br>لتصاريح الزواج والتعقيب</div></div>
+        <p>مكتب متخصص في خدمات التعقيب وإنهاء المعاملات الحكومية داخل المملكة العربية السعودية، بما في ذلك استخراج تصاريح الزواج ومعاملات التجنيس.</p>
+        </div>
+        <div class="foot-col">
+        <h4>روابط سريعة</h4>
+        <ul>
+        <li><a href="#services">خدمات التعقيب</a></li>
+        <li><a href="#why-us">لماذا نحن</a></li>
+        <li><a href="#steps">خطوات العمل</a></li>
+        <li><a href="#faq">الأسئلة الشائعة</a></li>
+        </ul>
+        </div>
+        <div class="foot-col">
+        <h4>الخدمات</h4>
+        <ul>
+        <li><a href="#contact">تصريح زواج سعودي من أجنبية</a></li>
+        <li><a href="#contact">تصريح زواج سعودية من أجنبي</a></li>
+        <li><a href="#contact">معاملات التجنيس</a></li>
+        <li><a href="#contact">تعقيب المعاملات الحكومية</a></li>
+        </ul>
+        </div>
+        <div class="foot-col">
+        <h4>تواصل معنا</h4>
+        <div class="foot-ci">📍 <span>الرياض — المملكة العربية السعودية</span></div>
+        <div class="foot-ci">📱 <span>+966563259401</span></div>
+        <a href="https://wa.me/966563259401" class="foot-wa" target="_blank">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        واتساب مباشر
+        </a>
+        </div>
+        </div>
+        <div class="foot-btm">
+        <span>© 2026 مكتب النخبة لتصاريح الزواج. جميع الحقوق محفوظة.</span>
+        <span>مكتب خدمات تعقيب — لا يمثل أي جهة حكومية رسمية.</span>
+        </div>
+        </div>
+        </footer>
+        
+        <!-- WA FLOAT BUTTON -->
+        <a href="https://wa.me/966563259401" class="wa-float" target="_blank" title="تواصل عبر واتساب">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        </a>
+        
+        <script>
+        function toggleMenu(){document.getElementById('mobMenu').classList.toggle('on')}
+        function closeMenu(){document.getElementById('mobMenu').classList.remove('on')}
+        function faq(btn){var it=btn.closest('.faq-it'),open=it.classList.contains('on');document.querySelectorAll('.faq-it').forEach(function(i){i.classList.remove('on')});if(!open)it.classList.add('on')}
+        function sendWa(){
+        var n=document.getElementById('f-name').value.trim();
+        var p=document.getElementById('f-phone').value.trim();
+        var s=document.getElementById('f-service').value;
+        var d=document.getElementById('f-details').value.trim();
+        if(!n||!p){alert('الرجاء إدخال الاسم ورقم الجوال');return}
+        var msg='السلام عليكم،\nاسمي: '+n+'\nجوالي: '+p+(s?'\nالخدمة: '+s:'')+(d?'\nتفاصيل: '+d:'');
+        window.open('https://wa.me/966563259401?text='+encodeURIComponent(msg),'_blank');
+        }
+        </script>
+        </body>
+        </html>
+
